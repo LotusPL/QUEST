@@ -13,18 +13,39 @@
     tools:context="wsb.quest.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
+    <Button
+        android:text="LOGIN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginButton" />
 
     <Button
         android:text="Show Beacons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:id="@+id/button3"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="198dp"
-        android:id="@+id/button3" />
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Confirm Task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:id="@+id/confirmTask"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/button3" />
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:id="@+id/logoutButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/loginButton" />
 
 </RelativeLayout>
